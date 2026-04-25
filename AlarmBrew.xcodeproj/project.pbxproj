@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB0001 /* AlarmBrewApp.swift */ = {isa = PBXBuildFile; fileRef = AA0001 /* AlarmBrewApp.swift */; };
+		AB0002 /* AppDelegate.swift */ = {isa = PBXBuildFile; fileRef = AA0002 /* AppDelegate.swift */; };
+		AB0003 /* ContentView.swift */ = {isa = PBXBuildFile; fileRef = AA0003 /* ContentView.swift */; };
+		AB0004 /* Alarm.swift */ = {isa = PBXBuildFile; fileRef = AA0004 /* Alarm.swift */; };
+		AB0005 /* AlarmListView.swift */ = {isa = PBXBuildFile; fileRef = AA0005 /* AlarmListView.swift */; };
+		AB0006 /* AddAlarmView.swift */ = {isa = PBXBuildFile; fileRef = AA0006 /* AddAlarmView.swift */; };
+		AB0007 /* ActiveAlarmView.swift */ = {isa = PBXBuildFile; fileRef = AA0007 /* ActiveAlarmView.swift */; };
+		AB0008 /* CameraPickerView.swift */ = {isa = PBXBuildFile; fileRef = AA0008 /* CameraPickerView.swift */; };
+		AB0009 /* AlarmViewModel.swift */ = {isa = PBXBuildFile; fileRef = AA0009 /* AlarmViewModel.swift */; };
+		AB0010 /* AlarmScheduler.swift */ = {isa = PBXBuildFile; fileRef = AA0010 /* AlarmScheduler.swift */; };
+		AB0011 /* ImageRecognitionService.swift */ = {isa = PBXBuildFile; fileRef = AA0011 /* ImageRecognitionService.swift */; };
+		AB0020 /* Assets.xcassets */ = {isa = PBXBuildFile; fileRef = AA0020 /* Assets.xcassets */; };
+		AB0021 /* Info.plist */ = {isa = PBXBuildFile; fileRef = AA0021 /* Info.plist */; };
+		AB0030 /* AlarmBrewTests.swift */ = {isa = PBXBuildFile; fileRef = AA0030 /* AlarmBrewTests.swift */; };
+		AB0031 /* Info.plist */ = {isa = PBXBuildFile; fileRef = AA0031 /* Info.plist */; };
+		AB0040 /* AlarmBrewUITests.swift */ = {isa = PBXBuildFile; fileRef = AA0040 /* AlarmBrewUITests.swift */; };
+		AB0041 /* Info.plist */ = {isa = PBXBuildFile; fileRef = AA0041 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0001 /* AlarmBrewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmBrewApp.swift"; sourceTree = "<group>"; };
+		AA0002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate.swift"; sourceTree = "<group>"; };
+		AA0003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView.swift"; sourceTree = "<group>"; };
+		AA0004 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alarm.swift"; sourceTree = "<group>"; };
+		AA0005 /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmListView.swift"; sourceTree = "<group>"; };
+		AA0006 /* AddAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddAlarmView.swift"; sourceTree = "<group>"; };
+		AA0007 /* ActiveAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActiveAlarmView.swift"; sourceTree = "<group>"; };
+		AA0008 /* CameraPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraPickerView.swift"; sourceTree = "<group>"; };
+		AA0009 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmViewModel.swift"; sourceTree = "<group>"; };
+		AA0010 /* AlarmScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmScheduler.swift"; sourceTree = "<group>"; };
+		AA0011 /* ImageRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageRecognitionService.swift"; sourceTree = "<group>"; };
+		AA0020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		AA0021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		AA0030 /* AlarmBrewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmBrewTests.swift"; sourceTree = "<group>"; };
+		AA0031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		AA0040 /* AlarmBrewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmBrewUITests.swift"; sourceTree = "<group>"; };
+		AA0041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		AA000000000000000000021A /* AlarmBrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmBrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000000000000000000031A /* AlarmBrewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmBrewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000000000000000000041A /* AlarmBrewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmBrewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXContainerItemProxy section */
+		AA000000000000000000039A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA000000000000000000001A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA000000000000000000020A;
+			remoteInfo = AlarmBrew;
+		};
+		AA000000000000000000049A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA000000000000000000001A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA000000000000000000020A;
+			remoteInfo = AlarmBrew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+		AA000000000000000000038A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA000000000000000000020A /* AlarmBrew */;
+			targetProxy = AA000000000000000000039A /* PBXContainerItemProxy */;
+		};
+		AA000000000000000000048A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA000000000000000000020A /* AlarmBrew */;
+			targetProxy = AA000000000000000000049A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA000000000000000000026A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000000000000000000036A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000000000000000000046A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000000000000000000025A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0001 /* AlarmBrewApp.swift */,
+				AB0002 /* AppDelegate.swift */,
+				AB0003 /* ContentView.swift */,
+				AB0004 /* Alarm.swift */,
+				AB0005 /* AlarmListView.swift */,
+				AB0006 /* AddAlarmView.swift */,
+				AB0007 /* ActiveAlarmView.swift */,
+				AB0008 /* CameraPickerView.swift */,
+				AB0009 /* AlarmViewModel.swift */,
+				AB0010 /* AlarmScheduler.swift */,
+				AB0011 /* ImageRecognitionService.swift */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000000000000000000035A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0030 /* AlarmBrewTests.swift */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000000000000000000045A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0040 /* AlarmBrewUITests.swift */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA000000000000000000027A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0020 /* Assets.xcassets */,
+				AB0021 /* Info.plist */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000000000000000000037A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0031 /* Info.plist */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000000000000000000047A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0041 /* Info.plist */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA000000000000000000005A = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000006A /* AlarmBrew */,
+				AA000000000000000000012A /* AlarmBrewTests */,
+				AA000000000000000000013A /* AlarmBrewUITests */,
+				AA000000000000000000011A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA000000000000000000011A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000021A /* AlarmBrew.app */,
+				AA000000000000000000031A /* AlarmBrewTests.xctest */,
+				AA000000000000000000041A /* AlarmBrewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000006A /* AlarmBrew */ = {
+			isa = PBXGroup;
+			children = (
+				AA0001 /* AlarmBrewApp.swift */,
+				AA0002 /* AppDelegate.swift */,
+				AA0003 /* ContentView.swift */,
+				AA0020 /* Assets.xcassets */,
+				AA0021 /* Info.plist */,
+				AA000000000000000000007A /* Models */,
+				AA000000000000000000008A /* Views */,
+				AA000000000000000000009A /* ViewModels */,
+				AA000000000000000000010A /* Services */,
+			);
+			name = AlarmBrew;
+			path = AlarmBrew;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000007A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0004 /* Alarm.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000008A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA0005 /* AlarmListView.swift */,
+				AA0006 /* AddAlarmView.swift */,
+				AA0007 /* ActiveAlarmView.swift */,
+				AA0008 /* CameraPickerView.swift */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000009A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA0009 /* AlarmViewModel.swift */,
+			);
+			name = ViewModels;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000010A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA0010 /* AlarmScheduler.swift */,
+				AA0011 /* ImageRecognitionService.swift */,
+			);
+			name = Services;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000012A /* AlarmBrewTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA0030 /* AlarmBrewTests.swift */,
+				AA0031 /* Info.plist */,
+			);
+			name = AlarmBrewTests;
+			path = AlarmBrewTests;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000013A /* AlarmBrewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA0040 /* AlarmBrewUITests.swift */,
+				AA0041 /* Info.plist */,
+			);
+			name = AlarmBrewUITests;
+			path = AlarmBrewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA000000000000000000020A /* AlarmBrew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000000000000000000022A;
+			buildPhases = (
+				AA000000000000000000025A /* Sources */,
+				AA000000000000000000026A /* Frameworks */,
+				AA000000000000000000027A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlarmBrew;
+			productName = AlarmBrew;
+			productReference = AA000000000000000000021A /* AlarmBrew */;
+			productType = "com.apple.product-type.application";
+		};
+		AA000000000000000000030A /* AlarmBrewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000000000000000000032A;
+			buildPhases = (
+				AA000000000000000000035A /* Sources */,
+				AA000000000000000000036A /* Frameworks */,
+				AA000000000000000000037A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA000000000000000000038A /* PBXTargetDependency */,
+			);
+			name = AlarmBrewTests;
+			productName = AlarmBrewTests;
+			productReference = AA000000000000000000031A /* AlarmBrewTests */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA000000000000000000040A /* AlarmBrewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000000000000000000042A;
+			buildPhases = (
+				AA000000000000000000045A /* Sources */,
+				AA000000000000000000046A /* Frameworks */,
+				AA000000000000000000047A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA000000000000000000048A /* PBXTargetDependency */,
+			);
+			name = AlarmBrewUITests;
+			productName = AlarmBrewUITests;
+			productReference = AA000000000000000000041A /* AlarmBrewUITests */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA000000000000000000001A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AA000000000000000000020A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					AA000000000000000000030A = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AA000000000000000000020A;
+					};
+					AA000000000000000000040A = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AA000000000000000000020A;
+					};
+				};
+			};
+			buildConfigurationList = AA000000000000000000002A;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA000000000000000000005A;
+			productRefGroup = AA000000000000000000011A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA000000000000000000020A /* AlarmBrew */,
+				AA000000000000000000030A /* AlarmBrewTests */,
+				AA000000000000000000040A /* AlarmBrewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		AA000000000000000000003A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA000000000000000000004A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA000000000000000000023A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AlarmBrew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alarmbrew.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA000000000000000000024A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AlarmBrew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alarmbrew.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA000000000000000000033A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AlarmBrewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alarmbrew.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlarmBrew.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AlarmBrew";
+			};
+			name = Debug;
+		};
+		AA000000000000000000034A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AlarmBrewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alarmbrew.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlarmBrew.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AlarmBrew";
+			};
+			name = Release;
+		};
+		AA000000000000000000043A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AlarmBrewUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alarmbrew.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlarmBrew;
+			};
+			name = Debug;
+		};
+		AA000000000000000000044A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AlarmBrewUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alarmbrew.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlarmBrew;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000000000000000000002A /* Build configuration list for PBXProject "AlarmBrew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000000000000000000003A /* Debug */,
+				AA000000000000000000004A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000000000000000000022A /* Build configuration list for PBXNativeTarget "AlarmBrew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000000000000000000023A /* Debug */,
+				AA000000000000000000024A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000000000000000000032A /* Build configuration list for PBXNativeTarget "AlarmBrewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000000000000000000033A /* Debug */,
+				AA000000000000000000034A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000000000000000000042A /* Build configuration list for PBXNativeTarget "AlarmBrewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000000000000000000043A /* Debug */,
+				AA000000000000000000044A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = AA000000000000000000001A /* Project object */;
+}
