@@ -3,27 +3,26 @@
  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<key>NSCameraUsageDescription</key>
-<string>AlarmBrew needs camera access to take a photo of your coffee maker to dismiss the alarm.</string>
-<key>NSPhotoLibraryUsageDescription</key>
-<string>AlarmBrew may use your photo library as a camera fallback on the simulator.</string>
-<key>UIBackgroundModes</key>
-<array>
-<string>audio</string>
-<string>fetch</string>
-</array>
-<key>UILaunchStoryboardName</key>
-<string>LaunchScreen</string>
-<key>UISupportedInterfaceOrientations</key>
-<array>
-<string>UIInterfaceOrientationPortrait</string>
-</array>
-<key>UISupportedInterfaceOrientations~ipad</key>
-<array>
-<string>UIInterfaceOrientationPortrait</string>
-<string>UIInterfaceOrientationPortraitUpsideDown</string>
-<string>UIInterfaceOrientationLandscapeLeft</string>
-<string>UIInterfaceOrientationLandscapeRight</string>
-</array>
+	<key>NSCameraUsageDescription</key>
+	<string>AlarmBrew needs camera access to take a photo of your coffee maker to dismiss the alarm.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>AlarmBrew may use your photo library as a camera fallback on the simulator.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
 </dict>
 </plist>

@@ -9,7 +9,7 @@ final class ImageRecognitionService {
 
     // MARK: - Public
 
-    /// Asynchronously analyses `image` and returns `(success, message)` on
+    /// Asynchronously analyzes `image` and returns `(success, message)` on
     /// the **main** thread.
     func detectCoffeeMaker(
         in image: UIImage,
@@ -33,13 +33,12 @@ final class ImageRecognitionService {
             guard let obs = req.results as? [VNClassificationObservation],
                   !obs.isEmpty else {
                 DispatchQueue.main.async {
-                    completion(false, "No results from analyser. Please try again.")
+                    completion(false, "No results from analyzer. Please try again.")
                 }
                 return
             }
             let result = self.evaluate(observations: obs)
-            DispatchQueue.main.async { completion(result.found, result.message) }
-        }
+            DispatchQueue.main.async { completion(result.found, result.message) }        }
 
         let orientation = cgImageOrientation(from: image)
         let handler = VNImageRequestHandler(

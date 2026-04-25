@@ -11,7 +11,7 @@ struct ActiveAlarmView: View {
     @State private var showCamera = false
     @State private var capturedImage: UIImage?
     @State private var analysisResult: AnalysisResult?
-    @State private var isAnalysing = false
+    @State private var isAnalyzing = false
     @State private var pulse = false
 
     private var matchedAlarm: Alarm? {
@@ -45,7 +45,7 @@ struct ActiveAlarmView: View {
             CameraPickerView(image: $capturedImage)
         }
         .onChange(of: capturedImage) { img in
-            if let img { analyseImage(img) }
+            if let img { analyzeImage(img) }
         }
     }
 
@@ -109,13 +109,13 @@ struct ActiveAlarmView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 18))
                 .overlay(
                     RoundedRectangle(cornerRadius: 18)
-                        .stroke(borderColour, lineWidth: 3)
+                        .stroke(borderColor, lineWidth: 3)
                 )
 
-            if isAnalysing {
+            if isAnalyzing {
                 HStack(spacing: 8) {
                     ProgressView().tint(.white)
-                    Text("Analysing image…")
+                    Text("Analyzing image…")
                         .foregroundColor(.white)
                 }
             } else if let result = analysisResult {
@@ -174,16 +174,16 @@ struct ActiveAlarmView: View {
         return f.string(from: Date())
     }
 
-    private var borderColour: Color {
+    private var borderColor: Color {
         guard let r = analysisResult else { return .clear }
         return r.found ? .green : .red
     }
 
-    private func analyseImage(_ image: UIImage) {
-        isAnalysing = true
+    private func analyzeImage(_ image: UIImage) {
+        isAnalyzing = true
         analysisResult = nil
         ImageRecognitionService.shared.detectCoffeeMaker(in: image) { found, message in
-            isAnalysing = false
+            isAnalyzing = false
             analysisResult = AnalysisResult(found: found, message: message)
             if found {
                 viewModel.stopAlarmSound()

@@ -24,7 +24,7 @@ final class AlarmScheduler {
         let content = UNMutableNotificationContent()
         content.title = alarm.label.isEmpty ? "AlarmBrew ☕" : alarm.label
         content.body = "Wake up! Take a photo of your coffee maker to dismiss."
-        content.sound = UNNotificationSound.defaultRingtone
+        content.sound = UNNotificationSound.default
         content.userInfo = ["alarmId": alarm.id.uuidString]
 
         var components = Calendar.current.dateComponents([.hour, .minute], from: alarm.time)
